@@ -18,6 +18,12 @@ header {
     grid-area: header;
     background-color: gray;
     text-align: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.nav-container {
+    background-color: black;
 }
 
 main {
@@ -42,8 +48,6 @@ footer {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: black;
     color: white;
-    height: 50px;
 }
 
