@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home page - Joanna Wisniewska WDD 131</title>
-    <link rel="stylesheet" href="styles/layout.css">
+    <title>WDD 131 – Dynamic Web Fundamentals - Joanna Wisniewska</title>
+    <link rel="stylesheet" href="styles/base.css">
 </head>
 <body>
     <header>
-        <p>WDD 131: Dynamic Web Fundamentals - Joanna Wisniewska</p>
+        <h1>WDD 131: Dynamic Web Fundamentals - Joanna Wisniewska</h1>
         <nav class="nav-container">
             <ul class="navigation">
-                <li><a href="index.html">LinkedIn</a></li>
-                <li><a href="canvas.html">Canvas</a></li>
-                <li><a href="scripture.html">Scripture</a></li>
+                <li><a href="https://pl.linkedin.com/">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Scripture</a></li>
                 <li><a href="final-project.html">Final Project</a></li>
             </ul>
         </nav>
@@ -41,20 +41,18 @@
     </main>
     <div class="aside">
         <div class="aside-header"><p>Web Dev Resources</p></div>
-        <div class="resources-container">
-            <ul class="resources">
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-            </ul>
-        </div>
+        <ul class="resources">
+            <li><a href="">Dev.to Community</a></li>
+            <li><a href="">Smashing Magazine</a></li>
+            <li><a href="">CSS Tricks</a></li>
+            <li><a href="">W3 School</a></li>
+            <li><a href="">Udemy</a></li>
+            <li><a href="">Image Placeholder</a></li>
+        </ul>
     </div>
     <footer>
-        <p>@2025 Joanna Wisniewska Poland</p>
-        <p>Last Modification: </p>
+        <p>@<span id="currentyear"></span> Joanna Wisniewska Poland</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
     </footer>
 </body>
 </html>
