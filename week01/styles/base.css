@@ -3,6 +3,16 @@ html, body {
     margin: 0;
 }
 
+:root {
+    --heading-font: 'Turret Road';
+    --title-font: 'Red Hat text';
+    --body-font: 'Spectral';
+    --primary-color: rgb(30, 47, 78);
+    --secondary-color: rgb(88, 88, 146);
+    --accent1-color: rgb(148, 148, 226);
+    --accent2-color: rgb(226, 180, 180);
+}
+
 body {
     display: grid;
     grid-template-rows: auto 1fr auto;
@@ -17,7 +27,8 @@ body {
 
 header {
     grid-area: header;
-    background-color: rgb(148, 148, 226);
+    background-color: var(--accent1-color);
+    font-family: var(--heading-font);
     text-align: center;
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -25,7 +36,7 @@ header {
 }
 
 .nav-container {
-    background-color: rgb(30, 47, 78);
+    background-color: var(--primary-color);
     align-content: center;
 }
 
@@ -52,7 +63,7 @@ main {
 
 footer {
     grid-area: footer;
-    background-color: rgb(226, 180, 180);
+    background-color: var(--accent2-color);
     text-align: center;
     margin-top: 30px;
 }
@@ -98,7 +109,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(88, 88, 146);
+    background-color: var(--secondary-color);
     border-radius: 20px 20px 0px 0px;
     height: 60px;
 }
@@ -106,6 +117,7 @@ footer {
 .about-header p {
     margin: 0;
     font-size: 30px;
+    font-family: var(--title-font);
     font-weight: bold;
     color: white;
 }
@@ -118,6 +130,7 @@ footer {
 .about p {
     margin: 30px 30px 10px 20px;
     font-size: 25px;
+    font-family: var(--body-font);
 }
 
 .country-container {
@@ -132,6 +145,7 @@ footer {
 
 .country-header h2 {
     font-size: 30px;
+    font-family: var(--title-font);
 }
 
 .country-description {
@@ -142,6 +156,7 @@ footer {
 .country-description p {
     font-size: 25px;
     margin-top: 0;
+    font-family: var(--body-font);
 }
 
 .country-flag {
@@ -154,6 +169,7 @@ footer {
 .country-flag p {
     font-size: 18px;
     padding: 10px;
+    font-family: var(--body-font);
 }
 
 /* Web Dev Resources */
@@ -172,6 +188,7 @@ footer {
     font-size: 30px;
     font-weight: bold;
     color: white;
+    font-family: var(--title-font);
 }
 
 .resources {
@@ -184,4 +201,5 @@ footer {
 
 .resources a {
     font-size: 25px;
+    font-family: var(--body-font);
 }
