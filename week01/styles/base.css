@@ -100,7 +100,7 @@ footer {
     align-items: center;
     background-color: rgb(88, 88, 146);
     border-radius: 20px 20px 0px 0px;
-    height: 40px;
+    height: 60px;
 }
 
 .about-header p {
@@ -125,12 +125,13 @@ footer {
 }
 
 .country-header {
-    justify-items: center;;
+    justify-items: center;
+    border-bottom: 3px solid rgb(88, 88, 146);
+    margin-bottom: 25px;
 }
 
 .country-header h2 {
     font-size: 30px;
-    margin-bottom: 40px;
 }
 
 .country-description {
@@ -163,7 +164,7 @@ footer {
     align-items: center;
     background-color: rgb(88, 88, 146);
     border-radius: 20px 20px 0px 0px;
-    height: 40px;
+    height: 60px;
 }
 
 .aside-header p {
@@ -177,7 +178,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    height: 90%;
+    height: 88%;
     justify-content: center;
 }
 
