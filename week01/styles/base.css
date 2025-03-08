@@ -68,6 +68,11 @@ footer {
     margin-top: 30px;
 }
 
+footer p {
+    font-family: var(--body-font);
+    font-size: 20px;
+}
+
 .navigation {
     display: flex;
     justify-content: space-evenly;
