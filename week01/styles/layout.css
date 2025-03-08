@@ -12,19 +12,21 @@ body {
         'main aside'
         'footer footer';
     min-height: 100vh;
-    background-color: rgb(248, 248, 248);
+    background-color: whitesmoke;
 }
 
 header {
     grid-area: header;
-    background-color: gray;
+    background-color: rgb(148, 148, 226);
     text-align: center;
     display: grid;
     grid-template-rows: 1fr 1fr;
+    position: sticky;
 }
 
 .nav-container {
-    background-color: black;
+    background-color: rgb(30, 47, 78);
+    position: sticky;
 }
 
 main {
@@ -37,8 +39,10 @@ main {
 
 .aside {
     grid-area: aside;
-    background-color: whitesmoke;
-    padding: 10px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 footer {
@@ -79,7 +83,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(148, 148, 226);
+    background-color: rgb(88, 88, 146);
     border-radius: 20px 20px 0px 0px;
     height: 40px;
 }
@@ -120,5 +124,34 @@ footer {
     margin-right: 30px;
 }
 
-/*  */
+/* Web Dev Resources */
+
+.aside-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(88, 88, 146);
+    border-radius: 20px 20px 0px 0px;
+    height: 40px;
+}
+
+.aside-header p {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.resources-container {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.resources {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50%;
+}
 
