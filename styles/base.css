@@ -35,6 +35,10 @@ header {
     margin-bottom: 30px;
 }
 
+header h2 {
+    align-content: center;
+}
+
 .nav-container {
     background-color: var(--primary-color);
     align-content: center;
@@ -148,7 +152,7 @@ footer p {
     margin-bottom: 25px;
 }
 
-.country-header h1 {
+.country-header h2 {
     font-size: 30px;
     font-family: var(--title-font);
 }
