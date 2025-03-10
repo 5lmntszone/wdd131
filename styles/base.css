@@ -35,10 +35,6 @@ header {
     margin-bottom: 30px;
 }
 
-header h2 {
-    align-content: center;
-}
-
 .nav-container {
     background-color: var(--primary-color);
     align-content: center;
@@ -123,7 +119,7 @@ footer p {
     height: 60px;
 }
 
-.about-header p {
+.about-header h2 {
     margin: 0;
     font-size: 30px;
     font-family: var(--title-font);
@@ -192,7 +188,7 @@ footer p {
     height: 60px;
 }
 
-.aside-header p {
+.aside-header h2 {
     margin: 0;
     font-size: 30px;
     font-weight: bold;
