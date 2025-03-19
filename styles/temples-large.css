@@ -1,0 +1,14 @@
+@media screen and (min-width: 500px) {
+    .album {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .navigation {
+        display: flex !important;
+        flex-direction: row;
+        position: static;
+        box-shadow: none;
+    }
+
+    
+}
