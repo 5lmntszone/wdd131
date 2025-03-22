@@ -99,7 +99,7 @@ footer p {
     bottom: -2px;
     width: 0%;
     height: 2px;
-    background-color: #2e6096;
+    background-color: rgb(8, 46, 77);;
     transition: width 0.3s ease;
 }
 
