@@ -1,0 +1,8 @@
+.footer {
+    justify-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: var(--clr-rose900);
+    color: var(--clr-stone);
+    font-size: var(--size-xs);
+}

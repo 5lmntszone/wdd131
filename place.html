@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Page</title>
+    <meta name="author" content="Joanna Wisniewska">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/utils.css">
+    <link rel="stylesheet" href="styles/components/header.css">
+    <link rel="stylesheet" href="styles/components/main.css">
+    <link rel="stylesheet" href="styles/components/footer.css">
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header class="header container">
+        <h1>Poland</h1>
+    </header>
+
+    <main class="main container">
+        <div class="hero">
+            <picture>
+                <source srcset="images/large_hero_img.jpg" media="(min-width: 768px)">
+                <img src="images/small_hero_img.jpg" alt="Bocian">
+            </picture>
+
+            <section class="main__data">
+                <div class="main__data__header"><h2>Data</h2></div>
+                <ul class="main__details">
+                    <li>Area: </li>
+                    <li>Population: </li>
+                    <li>Capital: </li>
+                    <li>Languages: </li>
+                    <li>Currency: </li>
+                    <li>Time Zone: </li>
+                    <li>Calling Code: </li>
+                    <li>Internet TLD: </li>
+                </ul>
+            </section>
+            
+            <section class="main__weather">
+                <div class="main__weather__header">
+                    <h2>Weather</h2>
+                    <img class="main_icon" src="images/weather-svgrepo-com.svg" alt="Weather Icon">
+                </div>
+                <ul class="main__details">
+                    <li>Temperature: </li>
+                    <li>Conditions: </li>
+                    <li>Wind: </li>
+                    <li>Wind Chill: </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer class="footer container">
+        <p>&copy; <span id="currentyear"></span> Joanna Wisniewska Poland</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

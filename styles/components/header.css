@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: var(--clr-rose700);
+}
+
+.header h1 {
+    font-size: var(--size-3xl);
+}
+
+@media (min-width: 768px) {
+    .header h1 {
+        font-size: var(--size-4xl);
+    }
+}
+
+@media (min-width: 1536px) {
+    .header h1 {
+        font-size: var(--size-5xl);
+    }
+}
+
