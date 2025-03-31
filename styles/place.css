@@ -75,4 +75,8 @@ h2 {
         background-color: transparent;
         padding: 0;
     }
+
+    body {
+        background-color: var(--clr-main);
+    }
 }
