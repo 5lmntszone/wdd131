@@ -84,7 +84,7 @@
     .main__weather__header {
         display: flex;
         gap: 1rem;
-        padding-right: 2.2rem;
+        padding-right: 3rem;
     }
 
     .weather-heading {
@@ -93,13 +93,8 @@
     }
 
     .weather-heading::after {
-        content: "";
-        display: inline-block;
-        background-image: url(../../images/weather-svgrepo-com.svg);
-        background-size: contain;
-        background-repeat: no-repeat;
-        width: 42px;
-        height: 42px;
+        content: " ☀️";
+        font-size: 2rem;
         margin-left: 0.5rem;
     }
 
