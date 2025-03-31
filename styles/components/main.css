@@ -47,7 +47,7 @@
         position: absolute;
         padding-left: 2rem;
         padding-right: 2rem;
-        padding-top: 6rem;
+        padding-top: 7rem;
         padding-bottom: 1rem;
         text-align: center;
         background-color: var(--clr-stone-transparent);
@@ -85,14 +85,27 @@
     .main__weather__header {
         display: flex;
         gap: 1rem;
-        padding-right: 4rem;
+        padding-right: 1.1rem;
     }
-    
-    .main_icon {
-        width: 40px;
+
+    .weather-heading {
+        display: flex;
+        align-items: center;
+    }
+
+    .weather-heading::after {
+        content: "";
         display: inline-block;
-        height: auto;
+        background-image: url(../../images/weather-svgrepo-com.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 42px;
+        height: 42px;
+        margin-left: 0.5rem;
         vertical-align: middle;
-        padding-top: 1.1rem;
+    }
+
+    .main_icon {
+        display: none;
     }
 }
