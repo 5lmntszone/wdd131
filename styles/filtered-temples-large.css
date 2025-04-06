@@ -1,0 +1,28 @@
+@media screen and (min-width: 500px) {
+    .album {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    header {
+        grid-template-columns: 1fr 3fr 1fr;
+    }
+
+    .navigation {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: space-around;
+        position: static;
+        box-shadow: none;
+        background-color: transparent;
+        width: 100%;
+    }
+
+    .navigation a {
+        color: rgb(8, 46, 77);
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+}
