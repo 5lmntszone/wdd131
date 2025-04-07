@@ -129,7 +129,7 @@ footer p {
     background-color: #e0e7ff;
     border-radius: 5px;
     padding: 1rem;
-    max-width: 200px;
+    width: 200px;
 }
 
 .temple-card img {
