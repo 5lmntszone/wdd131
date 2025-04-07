@@ -58,6 +58,7 @@ footer p {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
+    justify-items: center;
 }
 
 .album img {
@@ -124,3 +125,14 @@ footer p {
     color: black;
 }
 
+.temple-card {
+    background-color: #e0e7ff;
+    border-radius: 5px;
+    padding: 1rem;
+    max-width: 200px;
+}
+
+.temple-card img {
+    border-radius: 50px;
+    width: 100%;
+}
