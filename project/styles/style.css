@@ -1,0 +1,37 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f9f4ef;
+  color: #2e294e;
+  margin: 2rem;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+  color: #2e294e;
+}
+
+h1 {
+  border-bottom: 2px solid #f26a4b;
+  padding-bottom: 0.5rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+.highlight {
+  color: #f26a4b;
+  font-weight: bold;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+.wireframe {
+  max-width: 1000px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
