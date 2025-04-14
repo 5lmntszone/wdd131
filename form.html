@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <meta name="author" content="Joanna Wisniewska">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Slabo+13px&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form method="get" action="review.html" class="wf1">
+
+            <label for="product">Product Name:</label>
+            <select id="product" name="product" required>
+                <option value="" disabled selected>Select a Product ...</option>
+            </select>
+
+            <fieldset>
+            <legend>Overall Rating:</legend>
+            <div class="star-rating">
+                <label><input type="radio" id="star5" name="rating" value="5" required> &#9733;&#9733;&#9733;&#9733;&#9733;</label>
+                <label><input type="radio" id="star4" name="rating" value="4"> &#9733;&#9733;&#9733;&#9733;</label>
+                <label><input type="radio" id="star3" name="rating" value="3"> &#9733;&#9733;&#9733;</label>
+                <label><input type="radio" id="star2" name="rating" value="2"> &#9733;&#9733;</label>
+                <label><input type="radio" id="star1" name="rating" value="1"> &#9733;</label>
+            </div>
+            </fieldset>
+
+            <label for="installDate">Date of Installation:</label>
+            <input type="date" id="installDate" name="installDate" required>
+
+            <fieldset>
+                <legend>Useful Features (check all that apply):</legend>
+                <label><input type="checkbox" id="feature1" name="features" value="Durability"> Durability</label>
+                <label><input type="checkbox" id="feature2" name="features" value="Ease of use"> Ease of use</label>
+                <label><input type="checkbox" id="feature3" name="features" value="Performance"> Performance</label>
+                <label><input type="checkbox" id="feature4" name="features" value="Design"> Design</label>
+            </fieldset>
+
+            <label for="review">Written review:</label>
+            <textarea id="review" name="review" rows="5" cols="40" placeholder="Share your experience..."></textarea>
+
+            <label for="username">Your Name (optional):</label>
+            <input type="text" id="username" name="username">
+
+            <input type="submit" value="Send Review">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Joanna Wisniewska Poland</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
