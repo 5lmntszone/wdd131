@@ -3,14 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Explore famous art styles and movements throughout history." />
+  <meta name="description" content="Explore various art styles in a dynamic and creative way." />
   <title>ArtScope | Art Styles</title>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles/styles.css" />
   <script src="scripts/styles.js" defer></script>
 </head>
 <body>
-
   <header>
     <h1>ArtScope</h1>
     <nav>
@@ -25,7 +23,15 @@
   <main>
     <section>
       <h2>Explore Art Styles</h2>
-      <p>Discover different artistic movements that have shaped the world of art.</p>
+      <p>Select a category to filter the styles or simply scroll to enjoy the view.</p>
+      <div class="filter-buttons">
+        <button data-style="all" class="active">All</button>
+        <button data-style="Renaissance">Renaissance</button>
+        <button data-style="Impressionism">Impressionism</button>
+        <button data-style="Surrealism">Surrealism</button>
+        <button data-style="Abstract">Abstract</button>
+      </div>
+      <div class="blob-background"></div>
       <div id="styles-container"></div>
     </section>
   </main>
@@ -33,6 +39,5 @@
   <footer>
     <p>&copy; 2025 ArtScope | <a href="references.html">References</a></p>
   </footer>
-
 </body>
 </html>
