@@ -1,0 +1,48 @@
+@media (max-width: 767px) {
+    .hero {
+      position: relative;
+      overflow: hidden; 
+    }
+  
+    .hero-overlay {
+      position: absolute;
+      bottom: 5%;
+      left: 5%;
+      right: 5%;
+      background: linear-gradient(to bottom, #2e294eef, transparent 60%);
+      padding: 1rem;
+      max-width: 90%;
+      border-radius: 8px;
+      backdrop-filter: blur(1px);
+      z-index: 2;
+      font-size: 0.95rem;
+    }
+  
+    .hero-overlay h2 {
+      font-size: 1.6rem;
+    }
+  
+    .hero-overlay p {
+      font-size: 0.95rem;
+    }
+  
+    #styles-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .artist-card {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .artist-card img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .artist-card .info {
+      padding-left: 0;
+      padding-top: 1rem;
+    }
+  } 
+  
