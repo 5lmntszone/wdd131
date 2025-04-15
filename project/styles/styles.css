@@ -309,6 +309,22 @@
     color: var(--indigo);
     opacity: 0.8;
   }
+
+  /* Fade-in effect for Featured Artwork */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+  }
+  
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }  
+
+  .reference {
+    margin: 1rem;
+  }
   
   @media (min-width: 768px) {
     .artist-card {
@@ -324,6 +340,35 @@
   
     .artist-card .info {
       padding-left: 1.5rem;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .hero {
+      position: relative;
+      overflow: hidden; 
+    }
+  
+    .hero-overlay {
+      position: absolute;
+      bottom: 5%;
+      left: 5%;
+      right: 5%;
+      background: linear-gradient(to bottom, #2e294eef, transparent 60%);
+      padding: 1rem;
+      max-width: 90%;
+      border-radius: 8px;
+      backdrop-filter: blur(1px);
+      z-index: 2;
+      font-size: 0.95rem;
+    }
+  
+    .hero-overlay h2 {
+      font-size: 1.6rem;
+    }
+  
+    .hero-overlay p {
+      font-size: 0.95rem;
     }
   }
   

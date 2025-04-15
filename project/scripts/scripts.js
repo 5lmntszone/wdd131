@@ -61,3 +61,14 @@ const artworks = [
     localStorage.setItem("featuredArt", JSON.stringify(selected));
   });
   
+  // Fade-in observer for featured-art
+const fadeObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
+      fadeObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+
+fadeObserver.observe(document.getElementById("featured-art"));
