@@ -1,5 +1,3 @@
-/* Google Fonts are linked in the HTML <head> */
-
 /* Base Styles */
 :root {
     --indigo: #2e294e;
@@ -85,12 +83,75 @@
     margin-bottom: 3rem;
   }
   
-  /* Hero Image */
+  /* Hero Image Enhanced */
+  .hero {
+    position: relative;
+    margin-bottom: 3rem;
+  }
+  
   .hero img {
     width: 100%;
     height: auto;
+    display: block;
     border-radius: 8px;
+    transition: transform 8s ease;
+    transform: scale(1);
+  }
+  
+  .hero:hover img {
+    transform: scale(1.05);
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    background: linear-gradient(to right, #2e294edd, #2e294e88);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    max-width: 70%;
+    z-index: 2;
+    backdrop-filter: blur(2px);
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInHero 1s ease-out forwards;
+    animation-delay: 0.4s;
+  }
+  
+  .hero-overlay h2 {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+    color: #fff;
+  }
+  
+  .hero-overlay p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  
+  .hero-btn {
+    display: inline-block;
     margin-top: 1rem;
+    background: var(--coral);
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .hero-btn:hover {
+    background: #e0583f;
+  }
+  
+  @keyframes fadeInHero {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
   
   /* Featured Section */
