@@ -1,7 +1,7 @@
 :root {
-  --indigo: #2e294e;
+  --indigo: #150f33;
   --ivory: #fffaf5;
-  --coral: #d9583b;
+  --coral: #f05c3b;
   --coral-dark: #c44b2e;
   --text: #222;
 }
@@ -160,7 +160,7 @@ section {
 .hero-btn {
   display: inline-block;
   margin-top: 1rem;
-  background: var(--coral);
+  background: var(--coral-dark);
   color: white;
   padding: 0.6rem 1.2rem;
   border-radius: 4px;
@@ -199,7 +199,7 @@ section {
 
 /* Buttons */
 button {
-  background-color: var(--coral);
+  background-color: var(--coral-dark);
   color: white;
   border: none;
   padding: 0.6rem 1.2rem;
@@ -210,7 +210,7 @@ button {
 }
 
 button:hover {
-  background-color: var(--coral-dark);
+  background-color: var(--coral);
 }
 
 /* Footer */
