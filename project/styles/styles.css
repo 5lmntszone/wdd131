@@ -1,350 +1,348 @@
 :root {
-    --indigo: #2e294e;
-    --ivory: #f9f4ef;
-    --coral: #f26a4b;
-    --text: #333;
-  }
-  
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  html, body {
-    font-family: 'Open Sans', sans-serif;
-    background-color: var(--ivory);
-    color: var(--text);
-    line-height: 1.6;
-    width: 100%;
-    height: 100%;
-  }
-  
-  /* Typography */
-  h1, h2, h3 {
-    font-family: 'Playfair Display', serif;
-    color: var(--indigo);
-    margin-bottom: 0.5rem;
-  }
-  
-  h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  /* Header */
-  header {
-    position: relative;
-    background-color: var(--indigo);
-    color: white;
-    padding: 1rem;
-    text-align: center;
-  }
-  
-  header h1 {
-    margin-bottom: 0.5rem;
-    color: white;
-  }
+  --indigo: #2e294e;
+  --ivory: #fffaf5;
+  --coral: #d9583b;
+  --coral-dark: #c44b2e;
+  --text: #222;
+}
 
-  /* Logo */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-  .logo-stack {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 1rem;
-  }
-  
-  .logo-above {
-    height: auto; 
-    width: 130px;
-    display: block;
-    margin: -2.3rem;
-    padding: 0;
-  }
+html {
+  scroll-behavior: smooth;
+}
 
-  .logo-link {
-    display: inline-block;
-    text-decoration: none;
-  }
-  
-  .logo-link:hover {
-    opacity: 0.9;
-  }  
-  
-  
-  /* Navigation */
-  nav ul {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    list-style: none;
-    flex-wrap: wrap;
-    padding: 0.5rem 0;
-    margin: 0;
-  }
-  
-  nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  nav a:hover,
-  nav a.active {
-    color: var(--coral);
-  }
-  
-  /* Layout */
-  main {
-    max-width: 900px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-  }
-  
-  section {
-    margin-bottom: 3rem;
-  }
-  
-  /* Hero */
-  .hero {
-    position: relative;
-    margin-bottom: 3rem;
-  }
-  
-  .hero img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 8px;
-    transition: transform 8s ease;
-    transform: scale(1);
-  }
-  
-  .hero:hover img {
-    transform: scale(1.05);
-  }
-  
-  .hero-overlay {
-    position: absolute;
-    top: 10%;
-    left: 5%;
-    background: linear-gradient(to right, #2e294edd, #2e294e88);
-    color: white;
-    padding: 1.5rem;
-    border-radius: 8px;
-    max-width: 70%;
-    z-index: 2;
-    backdrop-filter: blur(2px);
-    opacity: 0;
-    transform: translateY(-20px);
-    animation: fadeInHero 1s ease-out forwards;
-    animation-delay: 0.4s;
-  }
-  
-  .hero-overlay h2 {
-    font-size: 2.5rem;
-    letter-spacing: 1px;
-    margin-bottom: 0.5rem;
-    color: #fff;
-  }
-  
-  .hero-overlay p {
-    font-size: 1rem;
-    line-height: 1.4;
-  }
-  
-  .hero-btn {
-    display: inline-block;
-    margin-top: 1rem;
-    background: var(--coral);
-    color: white;
-    padding: 0.6rem 1.2rem;
-    border-radius: 4px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background 0.3s;
-  }
-  
-  .hero-btn:hover {
-    background: #e0583f;
-  }
-  
-  @keyframes fadeInHero {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  /* Featured Artwork */
-  #featured-art {
-    border: 1px solid var(--indigo);
-    border-radius: 8px;
-    padding: 1rem;
-    background-color: white;
-    margin: 1rem 0;
-  }
-  
-  #featured-art img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 6px;
-    margin: 1rem auto 0 auto;
-  }
-  
-  /* Buttons */
-  button {
-    background-color: var(--coral);
-    color: white;
-    border: none;
-    padding: 0.6rem 1.2rem;
-    font-size: 1rem;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
-  }
-  
-  button:hover {
-    background-color: #e0583f;
-  }
-  
-  /* Footer */
-  footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: var(--indigo);
-    color: white;
-    margin-top: 0;
-  }
-  
-  footer a {
-    color: var(--coral);
-    text-decoration: none;
-  }
-  
-  /* Filters */
-  .filter-buttons {
-    margin: 1rem 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-  }
-  
-  .filter-buttons button {
-    background-color: var(--indigo);
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .filter-buttons button.active,
-  .filter-buttons button:hover {
-    background-color: var(--coral);
-  }
-  
-  /* Art Styles */
-  #styles-container {
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(2, 1fr);
-    margin-top: 1rem;
-  }
-  
-  .style-card {
-    background-color: white;
-    padding: 1rem;
-    border-radius: 8px;
-    border: 1px solid var(--indigo);
-    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-    opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.6s ease-out, transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .style-card.visible {
+html, body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--ivory);
+  color: var(--text);
+  line-height: 1.6;
+  width: 100%;
+  height: 100%;
+}
+
+/* Typography */
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  color: var(--indigo);
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Header */
+header {
+  position: relative;
+  background-color: var(--indigo);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+/* Logo */
+.logo-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.logo-above {
+  height: auto; 
+  width: 130px;
+  display: block;
+  margin: -2.3rem;
+  padding: 0;
+}
+
+.logo-link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.logo-link:hover {
+  opacity: 0.9;
+}  
+
+/* Navigation */
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+  flex-wrap: wrap;
+  padding: 0.5rem 0;
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover,
+nav a.active {
+  color: var(--coral);
+}
+
+/* Layout */
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  transition: transform 8s ease;
+  transform: scale(1);
+}
+
+.hero:hover img {
+  transform: scale(1.05);
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  background: linear-gradient(to right, #2e294edd, #2e294e88);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  max-width: 70%;
+  z-index: 2;
+  backdrop-filter: blur(2px);
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeInHero 1s ease-out forwards;
+  animation-delay: 0.4s;
+}
+
+.hero-overlay h2 {
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.hero-overlay p {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.hero-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: var(--coral);
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.hero-btn:hover {
+  background: var(--coral-dark);
+}
+
+@keyframes fadeInHero {
+  to {
     opacity: 1;
     transform: translateY(0);
   }
-  
-  .style-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  }
-  
-  .style-card h3 {
-    color: var(--indigo);
-  }
-  
-  .style-card img {
-    margin-top: 1rem;
-    height: 200px;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 6px;
-  }
-  
-  /* Artist Cards */
-  .artist-card {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    background-color: white;
-    border: 1px solid var(--indigo);
-    border-radius: 8px;
-    padding: 1rem;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-    margin: 1rem 2rem;
-    opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.6s ease-out;
-  }
-  
-  .artist-card.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-  .artist-card img {
-    width: 250px;
-    height: 250px;
-    flex-shrink: 0;
-    object-fit: cover;
-    border-radius: 6px;
-  }
-  
-  .artist-card .info {
-    padding-left: 1.5rem;
-  }
-  
-  .artist-card blockquote {
-    margin-top: 1rem;
-    font-style: italic;
-    color: var(--indigo);
-    opacity: 0.8;
-  }
-  
-  /* Fade-in effect for Featured Artwork */
-  .fade-in {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.6s ease-out;
-  }
-  
-  .fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-  .reference {
-    margin: 1rem;
-  }
-  
+}
+
+/* Featured Artwork */
+#featured-art {
+  border: 1px solid var(--indigo);
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: white;
+  margin: 1rem 0;
+}
+
+#featured-art img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+  margin: 1rem auto 0 auto;
+}
+
+/* Buttons */
+button {
+  background-color: var(--coral);
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: var(--coral-dark);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--indigo);
+  color: white;
+  margin-top: 0;
+}
+
+footer a {
+  color: var(--coral);
+  text-decoration: none;
+}
+
+/* Filters */
+.filter-buttons {
+  margin: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.filter-buttons button {
+  background-color: var(--indigo);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.filter-buttons button.active,
+.filter-buttons button:hover {
+  background-color: var(--coral-dark);
+}
+
+/* Art Styles */
+#styles-container {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 1rem;
+}
+
+.style-card {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--indigo);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.style-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.style-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.style-card h3 {
+  color: var(--indigo);
+}
+
+.style-card img {
+  margin-top: 1rem;
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* Artist Cards */
+.artist-card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background-color: white;
+  border: 1px solid var(--indigo);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  margin: 1rem 2rem;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+.artist-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.artist-card img {
+  width: 250px;
+  height: 250px;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.artist-card .info {
+  padding-left: 1.5rem;
+}
+
+.artist-card blockquote {
+  margin-top: 1rem;
+  font-style: italic;
+  color: var(--indigo);
+  opacity: 0.8;
+}
+
+/* Fade-in effect for Featured Artwork */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reference {
+  margin: 1rem;
+}
