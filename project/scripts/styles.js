@@ -2,19 +2,19 @@ const styles = [
   {
     name: "Renaissance",
     description: "A revival of classical art, emphasizing realism, humanism, and perspective.",
-    image: "images/birth-of-venus.jpg",
+    image: "images/birth-of-venus.webp",
     category: "Renaissance"
   },
   {
     name: "Impressionism",
     description: "Captures the impression of a moment through light, color, and loose brushwork.",
-    image: "images/impression-sunrise.jpg",
+    image: "images/impression-sunrise.webp",
     category: "Impressionism"
   },
   {
     name: "Surrealism",
     description: "Blends dream and reality with illogical scenes and symbolic imagery.",
-    image: "images/the-false-mirror.jpg",
+    image: "images/the-false-mirror.webp",
     category: "Surrealism"
   },
   {

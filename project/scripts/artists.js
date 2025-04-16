@@ -1,7 +1,7 @@
 const artists = [
     {
       name: "Frida Kahlo",
-      portrait: "images/frida.jpg",
+      portrait: "images/frida.webp",
       style: "Surrealism / Magical Realism",
       bio: "Frida Kahlo was a Mexican painter known for her powerful self-portraits and exploration of identity, pain, and indigenous culture.",
       notableWork: "The Two Fridas (1939)",
@@ -9,7 +9,7 @@ const artists = [
     },
     {
       name: "Vincent van Gogh",
-      portrait: "images/van-gogh.jpg",
+      portrait: "images/van-gogh.webp",
       style: "Post-Impressionism",
       bio: "Dutch artist known for his expressive use of color and emotive brushwork. Despite his struggles, he produced over 2,000 artworks.",
       notableWork: "Starry Night (1889)",
@@ -17,7 +17,7 @@ const artists = [
     },
     {
       name: "Pablo Picasso",
-      portrait: "images/picasso.jpg",
+      portrait: "images/picasso.webp",
       style: "Cubism / Modern Art",
       bio: "A Spanish painter and sculptor, Picasso is considered one of the most influential artists of the 20th century.",
       notableWork: "Guernica (1937)",
@@ -25,7 +25,7 @@ const artists = [
     },
     {
       name: "Georgia O’Keeffe",
-      portrait: "images/okeeffe.jpg",
+      portrait: "images/okeeffe.webp",
       style: "Modernism",
       bio: "American modernist known for her large-scale flower paintings and desert landscapes that captured the spirit of the American Southwest.",
       notableWork: "Jimson Weed (1936)",

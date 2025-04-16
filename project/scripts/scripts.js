@@ -3,28 +3,28 @@ const artworks = [
       title: "Starry Night",
       artist: "Vincent van Gogh",
       year: 1889,
-      image: "images/starry-night.jpg",
+      image: "images/starry-night.webp",
       style: "Post-Impressionism"
     },
     {
       title: "The Persistence of Memory",
       artist: "Salvador Dalí",
       year: 1931,
-      image: "images/persistence-of-memory.jpg",
+      image: "images/persistence-of-memory.webp",
       style: "Surrealism"
     },
     {
       title: "The Birth of Venus",
       artist: "Sandro Botticelli",
       year: 1486,
-      image: "images/birth-of-venus.jpg",
+      image: "images/birth-of-venus.webp",
       style: "Renaissance"
     },
     {
       title: "Composition VIII",
       artist: "Wassily Kandinsky",
       year: 1923,
-      image: "images/composition-viii.jpg",
+      image: "images/composition-viii.webp",
       style: "Abstract"
     }
   ];
